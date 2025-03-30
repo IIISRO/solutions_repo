@@ -200,9 +200,9 @@
 <p>The forced damped pendulum is a fascinating example of nonlinear dynamics, exhibiting behavior that ranges from simple periodic motion to chaotic oscillations. This system is governed by the interplay of damping, restoring forces, and external periodic driving, making it a crucial model for understanding diverse physical and engineering systems. Applications include energy harvesting, mechanical resonance, and vibration control.</p>
 <h2 id="theoretical-foundation">Theoretical Foundation</h2>
 <p>The equation governing a forced damped pendulum is given by:</p>
-<p>$[
+<p><span class="arithmatex">\([
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \sin(\theta) = A \cos(\Omega t)
-$]</p>
+]\)</span></p>
 <p>where:
 - <span class="arithmatex">\(\theta\)</span> is the angular displacement,
 - <span class="arithmatex">\(\beta\)</span> is the damping coefficient,
@@ -210,9 +210,9 @@ $]</p>
 - <span class="arithmatex">\(A\)</span> is the amplitude of the external driving force,
 - <span class="arithmatex">\(\Omega\)</span> is the driving frequency.</p>
 <p>For small angles (<span class="arithmatex">\(\theta \approx \sin(\theta)\)</span>), the equation simplifies to:</p>
-<p>$[
+<p><span class="arithmatex">\([
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\Omega t)
-$]</p>
+]\)</span></p>
 <p>This approximation allows us to analyze resonance and stability conditions.</p>
 <h2 id="analysis-of-dynamics">Analysis of Dynamics</h2>
 <p>To explore the system's dynamics, we numerically solve the equation for various values of <span class="arithmatex">\(\beta\)</span>, <span class="arithmatex">\(A\)</span>, and <span class="arithmatex">\(\Omega\)</span>.</p>
@@ -282,7 +282,7 @@ ani = animation.FuncAnimation(fig, update, frames=len(x_vals), init_func=init, i
 HTML(ani.to_jshtml())
 </code></pre>
 <video controls="" width="500">
-<source src="../../media/Screen Recording 2025-03-30 at 15.15.46.mov" type="video/mp4"/>
+<source src="docs/media/forceddamped.mov" type="video/mp4"/>
 </video>
 <p><a href="https://colab.research.google.com/drive/14JCdB3p2wlOL98uMvpiJflb4J5cvPyf0?authuser=0">colab</a></p>
 <h2 id="advanced-visualizations">Advanced Visualizations</h2>
