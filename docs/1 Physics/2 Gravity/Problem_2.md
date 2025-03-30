@@ -17,7 +17,7 @@ Mathematically, escape velocity $v_e$ is given by:
 
 $[
 v_e = \sqrt{\frac{2GM}{R}}
-$]
+]$
 
 Where:
 - $G$ is the gravitational constant,
@@ -34,7 +34,7 @@ The orbital velocity $v_o$ is given by:
 
 $[
 v_o = \sqrt{\frac{GM}{R}}
-$]
+]$
 
 Where:
 - $G$ is the gravitational constant,
@@ -51,7 +51,7 @@ The third cosmic velocity $v_3$ is given by:
 
 $[
 v_3 = \sqrt{\frac{2GM_{\text{sun}}}{R_{\text{sun}}} + \frac{v_{\text{escape}}^2}{2}}
-$]
+]$
 
 Where:
 - $M_{\text{sun}}$ is the mass of the Sun,

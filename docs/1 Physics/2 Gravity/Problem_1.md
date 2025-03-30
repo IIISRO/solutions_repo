@@ -18,7 +18,7 @@ I started by reviewing the fundamental forces involved in circular motion. The f
   
  $[
   F_g = \frac{G M m}{R^2}
- $]
+ ]$
 
   Where:
   -$G$is the gravitational constant,
@@ -31,7 +31,7 @@ I started by reviewing the fundamental forces involved in circular motion. The f
 
  $[
   F_c = \frac{m v^2}{R}
- $]
+ ]$
 
   Where:
   -$v$is the orbital velocity.
@@ -40,7 +40,7 @@ For a stable orbit, these two forces must be equal, meaning:
 
 $[
 F_g = F_c
-$]
+]$
 
 #### **Step 2: Deriving the Relationship**
 
@@ -48,37 +48,37 @@ Substituting the formulas for gravitational force and centripetal force:
 
 $[
 \frac{G M m}{R^2} = \frac{m v^2}{R}
-$]
+]$
 
 Simplifying this equation:
 
 $[
 v^2 = \frac{G M}{R}
-$]
+]$
 
 Next, I related the orbital velocity$v$to the orbital period$T$. The orbital velocity is given by the distance traveled in one orbit (circumference) divided by the orbital period:
 
 $[
 v = \frac{2 \pi R}{T}
-$]
+]$
 
 Substituting this into the equation for velocity:
 
 $[
 \left(\frac{2 \pi R}{T}\right)^2 = \frac{G M}{R}
-$]
+]$
 
 Simplifying:
 
 $[
 \frac{4 \pi^2 R^2}{T^2} = \frac{G M}{R}
-$]
+]$
 
 Solving for$T^2$:
 
 $[
 T^2 = \frac{4 \pi^2 R^3}{G M}
-$]
+]$
 
 This is the key result: **Kepler's Third Law**. It shows that the square of the orbital period ($T^2$) is proportional to the cube of the orbital radius ($R^3$).
 
@@ -153,7 +153,7 @@ Kepler's Third Law also holds for **elliptical orbits**. In this case, the **sem
 
 $[
 T^2 \propto a^3
-$]
+]$
 
 Thus, the law still holds for elliptical orbits, although we now use the semi-major axis instead of the orbital radius. This is important because most orbits in the Solar System (such as those of planets) are elliptical rather than perfectly circular.
 
