@@ -95,7 +95,7 @@ ani = animation.FuncAnimation(fig, update, frames=len(x_vals), init_func=init, i
 HTML(ani.to_jshtml())
 ```
 <video width="500" controls>
-    <source src="docs/media/forceddamped.mp4" type="video/mp4">
+    <source src="https://github.com/IIISRO/solutions_repo/raw/refs/heads/main/docs/media/forceddamped.mp4" type="video/mp4">
 </video>
 
 [colab](https://colab.research.google.com/drive/14JCdB3p2wlOL98uMvpiJflb4J5cvPyf0?authuser=0)
