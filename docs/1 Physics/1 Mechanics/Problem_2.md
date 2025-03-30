@@ -8,7 +8,7 @@ The equation governing a forced damped pendulum is given by:
 
 $[
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \sin(\theta) = A \cos(\Omega t)
-$]
+]$
 
 where:
 - $\theta$ is the angular displacement,
@@ -21,7 +21,7 @@ For small angles ($\theta \approx \sin(\theta)$), the equation simplifies to:
 
 $[
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\Omega t)
-$]
+]$
 
 This approximation allows us to analyze resonance and stability conditions.
 
@@ -95,7 +95,7 @@ ani = animation.FuncAnimation(fig, update, frames=len(x_vals), init_func=init, i
 HTML(ani.to_jshtml())
 ```
 <video width="500" controls>
-    <source src="../../media/Screen Recording 2025-03-30 at 15.15.46.mov" type="video/mp4">
+    <source src="docs/media/forceddamped.mov" type="video/mp4">
 </video>
 
 [colab](https://colab.research.google.com/drive/14JCdB3p2wlOL98uMvpiJflb4J5cvPyf0?authuser=0)

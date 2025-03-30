@@ -28,7 +28,7 @@ We investigate how the horizontal range depends on the angle of projection:
   
   $[
   R = \frac{v_0 \cos(\theta)}{g} \left( v_0 \sin(\theta) + \sqrt{v_0^2 \sin^2(\theta) + 2 g h} \right)
-  $]
+  ]$
 
 ## Practical Applications
 This model can be adapted to various real-world scenarios:
