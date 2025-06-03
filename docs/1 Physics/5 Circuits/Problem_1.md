@@ -46,15 +46,15 @@ The circuit is represented as a graph $G = (V, E)$, where:
 
 #### Series Connection:
 - If two resistors are connected end-to-end, they are in series. The equivalent resistance of resistors $R_1$ and $R_2$ in series is calculated as:
-  $[
+$$
   R_{\text{eq}} = R_1 + R_2
-  ]$
+$$
 
 #### Parallel Connection:
 - If two resistors are connected in parallel, the equivalent resistance $R_{\text{eq}}$ is given by:
-  $[
+$$
   \frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2}
-  ]$
+$$
   - This condition is identified by checking if both ends of the resistors are connected to the same nodes.
 
 ### Step 3: Iterative Graph Simplification
@@ -171,41 +171,41 @@ The algorithm is efficient for typical circuits, where the number of nodes and e
 - **Graph**: Two resistors $R_1 = 5 \, \Omega$ and $R_2 = 10 \, \Omega$ connected in series.
 - **Expected Output**: 
   - The equivalent resistance $R_{\text{eq}}$ is calculated as the sum of the resistances:
-    $[
+  $$
     R_{\text{eq}} = R_1 + R_2 = 5 + 10 = 15 \, \Omega
-    ]$
+$$
 - **Animation**: The nodes and edges will gradually change color, simulating the process of adding resistors in series. The final animation will show a single equivalent resistance at the end.
 
 ### Test Case 2: Simple Parallel Circuit
 - **Graph**: Two resistors $R_1 = 10 \, \Omega$ and $R_2 = 5 \, \Omega$ connected in parallel.
 - **Expected Output**: 
   - The equivalent resistance $R_{\text{eq}}$ is calculated using the formula for parallel resistances:
-    $[
+  $$
     \frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2}
-    ]$
+$$
     Substituting the given values:
-    $[
+  $$
     \frac{1}{R_{\text{eq}}} = \frac{1}{10} + \frac{1}{5} = 0.1 + 0.2 = 0.3
-    ]$
-    $[
+$$
+  $$
     R_{\text{eq}} = \frac{1}{0.3} \approx 3.33 \, \Omega
-    ]$
+$$
 - **Animation**: The nodes representing the parallel connection will show how the resistors' parallel combination reduces the circuit resistance. The equivalent resistance will be visualized at the end of the animation.
 
 ### Test Case 3: Complex Circuit with Nested Series and Parallel Connections
 - **Graph**: A more complex circuit where $R_1 = 10 \, \Omega$ and $R_2 = 5 \, \Omega$ are connected in parallel, followed by $R_3 = 20 \, \Omega$ in series.
 - **Expected Output**: 
   - First, calculate the parallel combination of $R_1$ and $R_2$:
-    $[
+  $$
     \frac{1}{R_{\text{eq\_parallel}}} = \frac{1}{10} + \frac{1}{5} = 0.3
-    ]$
-    $[
+$$
+  $$
     R_{\text{eq\_parallel}} = \frac{1}{0.3} \approx 3.33 \, \Omega
-    ]$
+$$
   - Now, combine the parallel result with $R_3$ in series:
-    $[
+  $$
     R_{\text{eq}} = R_{\text{eq\_parallel}} + R_3 = 3.33 + 20 = 23.33 \, \Omega
-    ]$
+$$
 - **Animation**: The graph will show how the resistors are reduced step-by-step, first combining $R_1$ and $R_2$ in parallel, then adding $R_3$ in series. The final result is a single equivalent resistance of $23.33 \, \Omega$.
 
 ### Test Case 4: Large Circuit with Multiple Series and Parallel Connections

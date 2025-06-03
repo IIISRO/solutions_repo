@@ -16,9 +16,9 @@ I started by reviewing the fundamental forces involved in circular motion. The f
 - **Gravitational Force:**
   The force between two masses, $M$ (central mass) and $m$ (orbiting object), is given by Newton's law of gravitation:
   
- $[
+$$
   F_g = \frac{G M m}{R^2}
- ]$
+$$
 
   Where:
   -$G$is the gravitational constant,
@@ -29,16 +29,16 @@ I started by reviewing the fundamental forces involved in circular motion. The f
 - **Centripetal Force:**
   The force required to keep an object in a circular orbit is the centripetal force:
 
- $[
+$$
   F_c = \frac{m v^2}{R}
- ]$
+$$
 
   Where:
   -$v$is the orbital velocity.
 
 For a stable orbit, these two forces must be equal, meaning:
 
-$[
+$$
 F_g = F_c
 ]$
 
@@ -46,37 +46,37 @@ F_g = F_c
 
 Substituting the formulas for gravitational force and centripetal force:
 
-$[
+$$
 \frac{G M m}{R^2} = \frac{m v^2}{R}
 ]$
 
 Simplifying this equation:
 
-$[
+$$
 v^2 = \frac{G M}{R}
 ]$
 
 Next, I related the orbital velocity$v$to the orbital period$T$. The orbital velocity is given by the distance traveled in one orbit (circumference) divided by the orbital period:
 
-$[
+$$
 v = \frac{2 \pi R}{T}
 ]$
 
 Substituting this into the equation for velocity:
 
-$[
+$$
 \left(\frac{2 \pi R}{T}\right)^2 = \frac{G M}{R}
 ]$
 
 Simplifying:
 
-$[
+$$
 \frac{4 \pi^2 R^2}{T^2} = \frac{G M}{R}
 ]$
 
 Solving for$T^2$:
 
-$[
+$$
 T^2 = \frac{4 \pi^2 R^3}{G M}
 ]$
 
@@ -151,7 +151,7 @@ plt.show()
 
 Kepler's Third Law also holds for **elliptical orbits**. In this case, the **semi-major axis**$a$(the average distance between the orbiting object and the central mass) replaces the orbital radius$R$. For elliptical orbits:
 
-$[
+$$
 T^2 \propto a^3
 ]$
 

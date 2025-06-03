@@ -24,9 +24,9 @@ The trajectory of a payload released near Earth can take one of several forms ba
 
 The gravitational force acting on the payload is governed by Newton's law of gravitation:
 
-$[
+$$
 F = \frac{GMm}{r^2}
-]$
+$$
 
 Where:
 - $G$ is the gravitational constant ($6.67430 \times 10^{-11} \, \text{m}^3 \text{kg}^{-1} \text{s}^{-2}$)
@@ -48,9 +48,9 @@ For the simulation, we assume the following initial conditions:
 
 We will use the following equations of motion to update the payload's position and velocity over time:
 
-$[
+$$
 \vec{F} = -\frac{GMm}{r^2} \hat{r}
-]$
+$$
 
 Where:
 - $\vec{F}$ is the gravitational force vector
@@ -58,13 +58,13 @@ Where:
 
 Using **Euler’s method**, the position and velocity are updated as:
 
-$[
+$$
 \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t
-]$
+$$
 
-$[
+$$
 \vec{v}(t + \Delta t) = \vec{v}(t) + \vec{a}(t) \Delta t
-]$
+$$
 
 Where:
 - $\vec{r}(t)$ is the position vector at time $t$
@@ -153,17 +153,17 @@ The code provided simulates the trajectory of a payload released near Earth usin
 ### Numerical Integration:
 - **Euler's method** is used to update the position and velocity of the payload over time:
   - The acceleration due to gravity is calculated as:
-    $[
+    $$
     \vec{a} = - \frac{GM}{r^2} \hat{r}
-    ]$
+    $$
     where $r$ is the distance between the Earth and the payload.
   - The velocity and position of the payload are updated iteratively using the equations:
-    $[
+    $$
     \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t
-    ]$
-    $[
+    $$
+    $$
     \vec{v}(t + \Delta t) = \vec{v}(t) + \vec{a}(t) \Delta t
-    ]$
+    $$
 
 ### Plotting:
 - The trajectory of the payload is plotted using **matplotlib**, showing the path taken relative to Earth's center (represented by a yellow circle at the origin).

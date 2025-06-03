@@ -6,9 +6,9 @@ The forced damped pendulum is a fascinating example of nonlinear dynamics, exhib
 ## Theoretical Foundation
 The equation governing a forced damped pendulum is given by:
 
-$[
+$$
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \sin(\theta) = A \cos(\Omega t)
-]$
+$$
 
 where:
 - $\theta$ is the angular displacement,
@@ -19,9 +19,9 @@ where:
 
 For small angles ($\theta \approx \sin(\theta)$), the equation simplifies to:
 
-$[
+$$
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\Omega t)
-]$
+$$
 
 This approximation allows us to analyze resonance and stability conditions.
 
