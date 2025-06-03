@@ -146,40 +146,6 @@
 </ul>
 <p class="caption"><span class="caption-text">3 Discret Mathematics</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal">1 Set Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_02%20Set_Theory/">Set Theory</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_03%20Relations/">Relations</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_04%20Functions/">Functions</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">2 Number Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_05%20Combinatorics/">Combinatorics</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_08%20Number_Theory/">Number Theory</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">3 Recurrence and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_06%20Sequences_and_Series/">Sequences and Series</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_07%20Induction/">Induction</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_09%20Recurrence/">Recurrence</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">4 Graph Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/4%20Graph%20Theory%20and%20.../_10%20Graph_Theory/">Graph Theory</a>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal">5 Logic</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/5%20Logic/_01%20Logic/">Logic</a>
@@ -234,9 +200,9 @@
 </ul>
 <h3 id="gravitational-force">Gravitational Force</h3>
 <p>The gravitational force acting on the payload is governed by Newton's law of gravitation:</p>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
 F = \frac{GMm}{r^2}
-]\)</span></p>
+\]</div>
 <p>Where:
 - <span class="arithmatex">\(G\)</span> is the gravitational constant (<span class="arithmatex">\(6.67430 \times 10^{-11} \, \text{m}^3 \text{kg}^{-1} \text{s}^{-2}\)</span>)
 - <span class="arithmatex">\(M\)</span> is Earth's mass (<span class="arithmatex">\(5.972 \times 10^{24} \, \text{kg}\)</span>)
@@ -250,19 +216,19 @@ F = \frac{GMm}{r^2}
 - Initial velocity: This will be varied to study different trajectory types (parabolic, elliptical, hyperbolic)</p>
 <h3 id="numerical-solution">Numerical Solution</h3>
 <p>We will use the following equations of motion to update the payload's position and velocity over time:</p>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
 \vec{F} = -\frac{GMm}{r^2} \hat{r}
-]\)</span></p>
+\]</div>
 <p>Where:
 - <span class="arithmatex">\(\vec{F}\)</span> is the gravitational force vector
 - <span class="arithmatex">\(\hat{r}\)</span> is the unit vector pointing radially outward from Earth</p>
 <p>Using <strong>Euler’s method</strong>, the position and velocity are updated as:</p>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
 \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t
-]\)</span></p>
-<p><span class="arithmatex">\([
+\]</div>
+<div class="arithmatex">\[
 \vec{v}(t + \Delta t) = \vec{v}(t) + \vec{a}(t) \Delta t
-]\)</span></p>
+\]</div>
 <p>Where:
 - <span class="arithmatex">\(\vec{r}(t)\)</span> is the position vector at time <span class="arithmatex">\(t\)</span>
 - <span class="arithmatex">\(\vec{v}(t)\)</span> is the velocity vector at time <span class="arithmatex">\(t\)</span>
@@ -347,17 +313,17 @@ plt.show()
 <ul>
 <li><strong>Euler's method</strong> is used to update the position and velocity of the payload over time:</li>
 <li>The acceleration due to gravity is calculated as:
-    <span class="arithmatex">\([
+    $$
     \vec{a} = - \frac{GM}{r^2} \hat{r}
-    ]\)</span>
+    $$
     where <span class="arithmatex">\(r\)</span> is the distance between the Earth and the payload.</li>
 <li>The velocity and position of the payload are updated iteratively using the equations:
-    <span class="arithmatex">\([
+    $$
     \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t
-    ]\)</span>
-<span class="arithmatex">\([
+    $$
+    $$
     \vec{v}(t + \Delta t) = \vec{v}(t) + \vec{a}(t) \Delta t
-    ]\)</span></li>
+    $$</li>
 </ul>
 <h3 id="plotting">Plotting:</h3>
 <ul>

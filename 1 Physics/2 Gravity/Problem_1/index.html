@@ -126,40 +126,6 @@
 </ul>
 <p class="caption"><span class="caption-text">3 Discret Mathematics</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal">1 Set Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_02%20Set_Theory/">Set Theory</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_03%20Relations/">Relations</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_04%20Functions/">Functions</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">2 Number Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_05%20Combinatorics/">Combinatorics</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_08%20Number_Theory/">Number Theory</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">3 Recurrence and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_06%20Sequences_and_Series/">Sequences and Series</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_07%20Induction/">Induction</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_09%20Recurrence/">Recurrence</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">4 Graph Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/4%20Graph%20Theory%20and%20.../_10%20Graph_Theory/">Graph Theory</a>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal">5 Logic</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/5%20Logic/_01%20Logic/">Logic</a>
@@ -201,9 +167,9 @@
 <li><strong>Gravitational Force:</strong>
   The force between two masses, <span class="arithmatex">\(M\)</span> (central mass) and <span class="arithmatex">\(m\)</span> (orbiting object), is given by Newton's law of gravitation:</li>
 </ul>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
   F_g = \frac{G M m}{R^2}
- ]\)</span></p>
+\]</div>
 <p>Where:
   -<span class="arithmatex">\(G\)</span>is the gravitational constant,
   -<span class="arithmatex">\(M\)</span>is the central mass (e.g., the mass of Earth or the Sun),
@@ -213,40 +179,40 @@
 <li><strong>Centripetal Force:</strong>
   The force required to keep an object in a circular orbit is the centripetal force:</li>
 </ul>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
   F_c = \frac{m v^2}{R}
- ]\)</span></p>
+\]</div>
 <p>Where:
   -<span class="arithmatex">\(v\)</span>is the orbital velocity.</p>
 <p>For a stable orbit, these two forces must be equal, meaning:</p>
-<p><span class="arithmatex">\([
+<p>$$
 F_g = F_c
-]\)</span></p>
+]$</p>
 <h4 id="step-2-deriving-the-relationship"><strong>Step 2: Deriving the Relationship</strong></h4>
 <p>Substituting the formulas for gravitational force and centripetal force:</p>
-<p><span class="arithmatex">\([
+<p>$$
 \frac{G M m}{R^2} = \frac{m v^2}{R}
-]\)</span></p>
+]$</p>
 <p>Simplifying this equation:</p>
-<p><span class="arithmatex">\([
+<p>$$
 v^2 = \frac{G M}{R}
-]\)</span></p>
+]$</p>
 <p>Next, I related the orbital velocity<span class="arithmatex">\(v\)</span>to the orbital period<span class="arithmatex">\(T\)</span>. The orbital velocity is given by the distance traveled in one orbit (circumference) divided by the orbital period:</p>
-<p><span class="arithmatex">\([
+<p>$$
 v = \frac{2 \pi R}{T}
-]\)</span></p>
+]$</p>
 <p>Substituting this into the equation for velocity:</p>
-<p><span class="arithmatex">\([
+<p>$$
 \left(\frac{2 \pi R}{T}\right)^2 = \frac{G M}{R}
-]\)</span></p>
+]$</p>
 <p>Simplifying:</p>
-<p><span class="arithmatex">\([
+<p>$$
 \frac{4 \pi^2 R^2}{T^2} = \frac{G M}{R}
-]\)</span></p>
+]$</p>
 <p>Solving for<span class="arithmatex">\(T^2\)</span>:</p>
-<p><span class="arithmatex">\([
+<p>$$
 T^2 = \frac{4 \pi^2 R^3}{G M}
-]\)</span></p>
+]$</p>
 <p>This is the key result: <strong>Kepler's Third Law</strong>. It shows that the square of the orbital period (<span class="arithmatex">\(T^2\)</span>) is proportional to the cube of the orbital radius (<span class="arithmatex">\(R^3\)</span>).</p>
 <hr/>
 <h3 id="2-implications-of-the-relationship">2. Implications of the Relationship</h3>
@@ -302,9 +268,9 @@ plt.show()
 <hr/>
 <h3 id="5-discussion-on-elliptical-orbits">5. Discussion on Elliptical Orbits</h3>
 <p>Kepler's Third Law also holds for <strong>elliptical orbits</strong>. In this case, the <strong>semi-major axis</strong><span class="arithmatex">\(a\)</span>(the average distance between the orbiting object and the central mass) replaces the orbital radius<span class="arithmatex">\(R\)</span>. For elliptical orbits:</p>
-<p><span class="arithmatex">\([
+<p>$$
 T^2 \propto a^3
-]\)</span></p>
+]$</p>
 <p>Thus, the law still holds for elliptical orbits, although we now use the semi-major axis instead of the orbital radius. This is important because most orbits in the Solar System (such as those of planets) are elliptical rather than perfectly circular.</p>
 <p>For elliptical orbits, the orbital period can still be predicted using Kepler's Third Law with the semi-major axis of the ellipse, simplifying the analysis</p>
 <hr/>

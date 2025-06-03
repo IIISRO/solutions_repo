@@ -132,40 +132,6 @@
 </ul>
 <p class="caption"><span class="caption-text">3 Discret Mathematics</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal">1 Set Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_02%20Set_Theory/">Set Theory</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_03%20Relations/">Relations</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_04%20Functions/">Functions</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">2 Number Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_05%20Combinatorics/">Combinatorics</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_08%20Number_Theory/">Number Theory</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">3 Recurrence and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_06%20Sequences_and_Series/">Sequences and Series</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_07%20Induction/">Induction</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_09%20Recurrence/">Recurrence</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">4 Graph Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/4%20Graph%20Theory%20and%20.../_10%20Graph_Theory/">Graph Theory</a>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal">5 Logic</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/5%20Logic/_01%20Logic/">Logic</a>
@@ -200,9 +166,9 @@
 <p>The forced damped pendulum is a fascinating example of nonlinear dynamics, exhibiting behavior that ranges from simple periodic motion to chaotic oscillations. This system is governed by the interplay of damping, restoring forces, and external periodic driving, making it a crucial model for understanding diverse physical and engineering systems. Applications include energy harvesting, mechanical resonance, and vibration control.</p>
 <h2 id="theoretical-foundation">Theoretical Foundation</h2>
 <p>The equation governing a forced damped pendulum is given by:</p>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \sin(\theta) = A \cos(\Omega t)
-]\)</span></p>
+\]</div>
 <p>where:
 - <span class="arithmatex">\(\theta\)</span> is the angular displacement,
 - <span class="arithmatex">\(\beta\)</span> is the damping coefficient,
@@ -210,9 +176,9 @@
 - <span class="arithmatex">\(A\)</span> is the amplitude of the external driving force,
 - <span class="arithmatex">\(\Omega\)</span> is the driving frequency.</p>
 <p>For small angles (<span class="arithmatex">\(\theta \approx \sin(\theta)\)</span>), the equation simplifies to:</p>
-<p><span class="arithmatex">\([
+<div class="arithmatex">\[
 \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\Omega t)
-]\)</span></p>
+\]</div>
 <p>This approximation allows us to analyze resonance and stability conditions.</p>
 <h2 id="analysis-of-dynamics">Analysis of Dynamics</h2>
 <p>To explore the system's dynamics, we numerically solve the equation for various values of <span class="arithmatex">\(\beta\)</span>, <span class="arithmatex">\(A\)</span>, and <span class="arithmatex">\(\Omega\)</span>.</p>

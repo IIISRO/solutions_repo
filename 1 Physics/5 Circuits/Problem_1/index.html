@@ -158,40 +158,6 @@
 </ul>
 <p class="caption"><span class="caption-text">3 Discret Mathematics</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal">1 Set Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_02%20Set_Theory/">Set Theory</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_03%20Relations/">Relations</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_04%20Functions/">Functions</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">2 Number Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_05%20Combinatorics/">Combinatorics</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_08%20Number_Theory/">Number Theory</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">3 Recurrence and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_06%20Sequences_and_Series/">Sequences and Series</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_07%20Induction/">Induction</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_09%20Recurrence/">Recurrence</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">4 Graph Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/4%20Graph%20Theory%20and%20.../_10%20Graph_Theory/">Graph Theory</a>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal">5 Logic</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/5%20Logic/_01%20Logic/">Logic</a>
@@ -268,16 +234,16 @@
 <h4 id="series-connection">Series Connection:</h4>
 <ul>
 <li>If two resistors are connected end-to-end, they are in series. The equivalent resistance of resistors <span class="arithmatex">\(R_1\)</span> and <span class="arithmatex">\(R_2\)</span> in series is calculated as:
-  <span class="arithmatex">\([
+$$
   R_{\text{eq}} = R_1 + R_2
-  ]\)</span></li>
+$$</li>
 </ul>
 <h4 id="parallel-connection">Parallel Connection:</h4>
 <ul>
 <li>If two resistors are connected in parallel, the equivalent resistance <span class="arithmatex">\(R_{\text{eq}}\)</span> is given by:
-  <span class="arithmatex">\([
+$$
   \frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2}
-  ]\)</span></li>
+$$</li>
 <li>This condition is identified by checking if both ends of the resistors are connected to the same nodes.</li>
 </ul>
 <h3 id="step-3-iterative-graph-simplification">Step 3: Iterative Graph Simplification</h3>
@@ -380,9 +346,9 @@ HTML(ani.to_html5_video())
 <li><strong>Graph</strong>: Two resistors <span class="arithmatex">\(R_1 = 5 \, \Omega\)</span> and <span class="arithmatex">\(R_2 = 10 \, \Omega\)</span> connected in series.</li>
 <li><strong>Expected Output</strong>: </li>
 <li>The equivalent resistance <span class="arithmatex">\(R_{\text{eq}}\)</span> is calculated as the sum of the resistances:
-    <span class="arithmatex">\([
+  $$
     R_{\text{eq}} = R_1 + R_2 = 5 + 10 = 15 \, \Omega
-    ]\)</span></li>
+$$</li>
 <li><strong>Animation</strong>: The nodes and edges will gradually change color, simulating the process of adding resistors in series. The final animation will show a single equivalent resistance at the end.</li>
 </ul>
 <h3 id="test-case-2-simple-parallel-circuit">Test Case 2: Simple Parallel Circuit</h3>
@@ -390,16 +356,16 @@ HTML(ani.to_html5_video())
 <li><strong>Graph</strong>: Two resistors <span class="arithmatex">\(R_1 = 10 \, \Omega\)</span> and <span class="arithmatex">\(R_2 = 5 \, \Omega\)</span> connected in parallel.</li>
 <li><strong>Expected Output</strong>: </li>
 <li>The equivalent resistance <span class="arithmatex">\(R_{\text{eq}}\)</span> is calculated using the formula for parallel resistances:
-    <span class="arithmatex">\([
+  $$
     \frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2}
-    ]\)</span>
+$$
     Substituting the given values:
-    <span class="arithmatex">\([
+  $$
     \frac{1}{R_{\text{eq}}} = \frac{1}{10} + \frac{1}{5} = 0.1 + 0.2 = 0.3
-    ]\)</span>
-<span class="arithmatex">\([
+$$
+  $$
     R_{\text{eq}} = \frac{1}{0.3} \approx 3.33 \, \Omega
-    ]\)</span></li>
+$$</li>
 <li><strong>Animation</strong>: The nodes representing the parallel connection will show how the resistors' parallel combination reduces the circuit resistance. The equivalent resistance will be visualized at the end of the animation.</li>
 </ul>
 <h3 id="test-case-3-complex-circuit-with-nested-series-and-parallel-connections">Test Case 3: Complex Circuit with Nested Series and Parallel Connections</h3>
@@ -407,16 +373,16 @@ HTML(ani.to_html5_video())
 <li><strong>Graph</strong>: A more complex circuit where <span class="arithmatex">\(R_1 = 10 \, \Omega\)</span> and <span class="arithmatex">\(R_2 = 5 \, \Omega\)</span> are connected in parallel, followed by <span class="arithmatex">\(R_3 = 20 \, \Omega\)</span> in series.</li>
 <li><strong>Expected Output</strong>: </li>
 <li>First, calculate the parallel combination of <span class="arithmatex">\(R_1\)</span> and <span class="arithmatex">\(R_2\)</span>:
-    <span class="arithmatex">\([
-    \frac{1}{R_{\text{eq\_parallel}}} = \frac{1}{10} + \frac{1}{5} = 0.3
-    ]\)</span>
-<span class="arithmatex">\([
-    R_{\text{eq\_parallel}} = \frac{1}{0.3} \approx 3.33 \, \Omega
-    ]\)</span></li>
+  $$
+    \frac{1}{R_{\text{eq_parallel}}} = \frac{1}{10} + \frac{1}{5} = 0.3
+$$
+  $$
+    R_{\text{eq_parallel}} = \frac{1}{0.3} \approx 3.33 \, \Omega
+$$</li>
 <li>Now, combine the parallel result with <span class="arithmatex">\(R_3\)</span> in series:
-    <span class="arithmatex">\([
-    R_{\text{eq}} = R_{\text{eq\_parallel}} + R_3 = 3.33 + 20 = 23.33 \, \Omega
-    ]\)</span></li>
+  $$
+    R_{\text{eq}} = R_{\text{eq_parallel}} + R_3 = 3.33 + 20 = 23.33 \, \Omega
+$$</li>
 <li><strong>Animation</strong>: The graph will show how the resistors are reduced step-by-step, first combining <span class="arithmatex">\(R_1\)</span> and <span class="arithmatex">\(R_2\)</span> in parallel, then adding <span class="arithmatex">\(R_3\)</span> in series. The final result is a single equivalent resistance of <span class="arithmatex">\(23.33 \, \Omega\)</span>.</li>
 </ul>
 <h3 id="test-case-4-large-circuit-with-multiple-series-and-parallel-connections">Test Case 4: Large Circuit with Multiple Series and Parallel Connections</h3>
