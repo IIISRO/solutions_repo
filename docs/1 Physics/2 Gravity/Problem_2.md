@@ -206,7 +206,7 @@ From the graph, we observe the following trends:
 
 Here’s the graph we plotted earlier:
 
-![alt text](https://github.com/IIISRO/solutions_repo/raw/refs/heads/main/docs/media/kepler_orbit_simulation.gif)
+![alt text](https://github.com/IIISRO/solutions_repo/raw/refs/heads/main/docs/media/cosmic_velocities_final.gif)
 
 
 
