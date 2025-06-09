@@ -123,7 +123,12 @@ plt.tight_layout()
 plt.show()
 
 ```
+
+
 [colab](https://colab.research.google.com/drive/15_0KXIqa3F05oDqMukyy9NkAAAlvk-ov?usp=sharing)
+
+![alt text](https://github.com/IIISRO/solutions_repo/raw/refs/heads/main/docs/media/download.png)
+
 ---
 
 ## **4. Results and Discussion**  
